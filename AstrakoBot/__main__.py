@@ -73,24 +73,23 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a modular group management bot.
+Oy {}, gue {}! 
+gue bot buat ngatur grup.
 
-You can find my list of available commands with /help.
+biar ga gblk gimana cara gunain gua, coba klik /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a modular group management bot and help admins manage their groups. Have a look at the following for an idea of some of \
-the things I can help you with.
+Oy! gue *{}*.
+gue bot buat bantu ngatur grup lu.
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+*INTI* perintah yang bisa gua lakuin:
+ • /help: belajar buat tau gimana cara make gua.
+ • /help <nama modul/perintah>: ngejelasin cara kerja modul/perintah itu.
+ • /donate: donasi?hmmm tak usah!
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+   • kalo lu kirim di PM: bakal gua kasi tau apa yang udah lu setting di grup lu.a
+   • kalo lu kirim di Grup: gua bakal ngarahin lu ke PM dan ngasih settingan biar lu setting gua.
 
 
 {}
@@ -222,22 +221,18 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="Add gua ke grup lu",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
                             )
                         ],
                         [
-                            InlineKeyboardButton(
-                                text="Support Group",
-                                url=f"https://t.me/AstrakoBotSupport",
+                            
                             ),
                         ],
                         [
-                            InlineKeyboardButton(
-                                text="Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                            ",
                             )
                         ],
                         [
